@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    Informe seu login:
+    <input type="email" id="input_login">
+    Informe sua senha:
+    <input type="password" id="input_senha">
+
+    <button onclick="entrar()">Entrar</button>
+</body>
+</html>
+
+<script>
+function entrar() {
+    var email = input_login.value;
+    var senha = input_senha.value;
+
+    if (email == "SPtech" && senha == "Digital") {
+        alert(`Usuário autenticado com sucesso.`)
+    } else {
+        alert(`Falha na autenticação`)
+    }
+}
+
+</script>

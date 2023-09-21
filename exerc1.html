@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    Temperatura atual:
+    <input type="text" id="input_temperatura">
+
+    <button onclick="versituacao()"> Ver situação </button>
+
+    <div id="resultado"></div>
+</body>
+</html>
+
+<script>
+function versituacao() {
+    var temperatura = input_temperatura.value 
+
+    if (temperatura <=21 && >=24) {
+        resultado.innerHTML = `Temperatura CONFORTÁVEL :)`
+    }
+    else {
+        resultado.innerHTML = `Temperatura DESCONFORTÁVEL :(`;
+    }
+
+}
+
+</script>
